@@ -6,7 +6,19 @@
     padding: 4rem 8%;
     background: #fff5f8; /* fundo suave */
   }
+  /* Ícone do menu */
+#menu {
   
+  background-color: #EF2F7E;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none; /* só aparece no mobile */
+  border: none;
+  border-radius: 5%;
+ 
+  
+}
+
   .hero-content {
     max-width: 50%;
   }
@@ -26,21 +38,6 @@
     margin: 1rem 0 2rem;
     font-size: 1.1rem;
     color: #444;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 0.9rem 1.5rem;
-    background: #EF2F7E;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .btn:hover {
-    opacity: 0.8;
   }
   
   .link {
@@ -337,3 +334,33 @@
     line-height: 1.4;
   }   
   
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* esconde links por padrão */
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    border-top: 1px solid var(--border);
+  }
+  nav ul.show {
+    display: flex; /* quando ativar o menu */
+  }
+
+  #menu {
+    display: block; /* mostra o hambúrguer */
+    flex-direction: column;
+    position: absolute;
+    top: 2rem; /* abaixo do header */
+    left: 20px; /* encosta no canto direito */
+    padding: 10px;
+
+    .info-text p {
+      font-size: 1rem;
+      line-height: 1.5rem; /* espaçamento entre linhas */
+      text-align: justify; /* organiza o texto */
+      margin-bottom: 1rem; /* espaço entre parágrafos */
+    }
+}

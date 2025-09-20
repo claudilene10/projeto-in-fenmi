@@ -385,6 +385,13 @@
   // Opcional: filtragem inicial para "todos"
   filtrarVagas('todos');
 </script>
+  <script>
+  const menuBtn = document.getElementById("menu");
+  const navLinks = document.querySelector("nav ul");
 
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 </body>
 </html>

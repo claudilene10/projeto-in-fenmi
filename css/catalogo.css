@@ -321,3 +321,35 @@ footer {
   margin-top: 6px;
 }
 
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* esconde links por padrão */
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    border-top: 1px solid var(--border);
+  }
+  nav ul.show {
+    display: flex; /* quando ativar o menu */
+  }
+
+  #menu {
+    display: block; /* mostra o hambúrguer */
+    flex-direction: column;
+    position: absolute;
+    top: 2rem; /* abaixo do header */
+    left: 20px; /* encosta no canto direito */
+    padding: 10px;
+
+    .info-text p {
+      font-size: 1rem;
+      line-height: 1.5rem; /* espaçamento entre linhas */
+      text-align: justify; /* organiza o texto */
+      margin-bottom: 1rem; /* espaço entre parágrafos */
+    }
+}
+}

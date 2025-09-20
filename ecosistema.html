@@ -535,5 +535,13 @@ footer {
   <footer>
     © 2025 Fenmi — Parceria Ambiental • Todos os direitos reservados
     
+      <script>
+  const menuBtn = document.getElementById("menu");
+  const navLinks = document.querySelector("nav ul");
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 </body>
 </html>

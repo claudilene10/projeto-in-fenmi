@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Prestadores</title>
      <link rel="stylesheet" href="css/style.css">
- 
+ <link rel="stylesheet" href="css/planejar_reforma.css">
    
 </head>
 <body>
@@ -42,8 +42,8 @@
     <p>
       Conte com os mais de 50 serviços do <strong>Fenmi</strong> para ficar apenas com a parte boa de reformar a casa.
     </p>
-    <a href="#" class="btn">Contratar serviços de reforma</a>
-    <a href="#" class="link">Entenda como funciona</a>
+    <a href="catalogo.html" class="btn">Contratar serviços de reforma</a>
+    <a href="Quemsomos.html" class="link">Entenda como funciona</a>
   </div>
   <div class="hero-img">
     <img src="images/couple-5963678_1920.png" alt="Profissional Fenmi">
@@ -94,9 +94,7 @@
        
       <section class="passo-a-passo">
   <div class="passo-container">
-    <div class="passo-img">
-      <img src="images/duvida.png" alt="Profissionais confusos" />
-    </div>
+  
 
     <div class="passo-texto">
       <h2>Não sabe por onde começar?</h2>
@@ -144,6 +142,14 @@
     &copy; 2025 Fenmi - Todos os direitos reservados.
   </footer>
 
+<script>
+  const menuBtn = document.getElementById("menu");
+  const navLinks = document.querySelector("nav ul");
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
 
 </body>
